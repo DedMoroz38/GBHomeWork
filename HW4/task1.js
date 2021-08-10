@@ -12,6 +12,9 @@ function number_parser(number_list, number) {
         return {};
 
     }
+    else if (isNaN(number)) {
+        return 'Is not a number!'
+    }
     else {
         while (number_list.length < 3) {
             number_list.unshift('0');
